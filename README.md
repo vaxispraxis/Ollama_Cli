@@ -12,6 +12,26 @@ cargo run --release -- hello robot
 echo "Hello" | cargo run --release
 ```
 
+## Configuration
+- `OLLAMA_HOST` (default `http://localhost:11434`)
+- `OLLAMA_HOSTS` (legacy/alt name, used if `OLLAMA_HOST` is unset)
+- `OLLAMA_MODEL` (default `dolphin3:8b`)
+
+## Shell Examples
+
+### bash / zsh
+```bash
+export OLLAMA_HOST="http://localhost:11434"
+export OLLAMA_MODEL="dolphin3:8b"
+cargo run --release -- hello robot
+```
+
+### nushell
+```nu
+$env.OLLAMA_HOST = "http://localhost:11434"
+$env.OLLAMA_MODEL = "dolphin3:8b"
+cargo run --release -- hello robot
+```
+
 ## Notes
-- Expects Ollama running at `http://localhost:11434`.
-- Uses model name `ollama` (change in `src/main.rs` if needed).
+- Expects Ollama running locally unless `OLLAMA_HOST` is set.

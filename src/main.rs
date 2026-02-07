@@ -12,7 +12,7 @@ struct GenerateRequest<'a> {
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Prefer CLI args as the prompt; fall back to stdin for piping.
-    let mut args = env::args().skip(1).collect::<Vec<String>>();
+    let args = env::args().skip(1).collect::<Vec<String>>();
     let mut prompt = if !args.is_empty() {
         args.join(" ")
     } else {
@@ -34,8 +34,17 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
     }
 
-    let host = env::var("OLLAMA_HOST").unwrap_or_else(|_| "http://localhost:11434".to_string());
-    let model = env::var("OLLAMA_MODEL").unwrap_or_else(|_| "dolphin3:8b".to_string());
+    let host = env::var("OLLAMA_HOST")
+        .or_else(|_| env::var("OLLAMA_HOSTS"))
+        .ok()
+        .map(|v| v.trim().to_string())
+        .filter(|v| !v.is_empty())
+        .unwrap_or_else(|| "http://localhost:11434".to_string());
+    let model = env::var("OLLAMA_MODEL")
+        .ok()
+        .map(|v| v.trim().to_string())
+        .filter(|v| !v.is_empty())
+        .unwrap_or_else(|| "dolphin3:8b".to_string());
 
     let payload = GenerateRequest {
         model: &model,

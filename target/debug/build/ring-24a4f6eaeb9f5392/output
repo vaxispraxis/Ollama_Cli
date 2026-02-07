@@ -12,7 +12,7 @@ cargo:rerun-if-env-changed=CARGO_CFG_TARGET_OS
 cargo:rerun-if-env-changed=CARGO_CFG_TARGET_ENV
 cargo:rerun-if-env-changed=CARGO_CFG_TARGET_ENDIAN
 OPT_LEVEL = Some(0)
-OUT_DIR = Some(/Users/zion/src/open-ollama-cli/target/debug/build/ring-24a4f6eaeb9f5392/out)
+OUT_DIR = Some(/Users/zion/src/Ollama_Cli/target/debug/build/ring-24a4f6eaeb9f5392/out)
 TARGET = Some(x86_64-apple-darwin)
 CARGO_ENCODED_RUSTFLAGS = Some(-Ctarget-cpu=native)
 HOST = Some(x86_64-apple-darwin)
@@ -39,13 +39,13 @@ cargo:rerun-if-env-changed=CFLAGS_x86_64_apple_darwin
 CFLAGS_x86_64_apple_darwin = None
 cargo:rerun-if-env-changed=CFLAGS_x86_64-apple-darwin
 CFLAGS_x86_64-apple-darwin = None
-cargo:warning=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/zion/src/open-ollama-cli/target/debug/build/ring-24a4f6eaeb9f5392/out/libring_core_0_17_14_.a(a0330e891e733f4e-gfp_p256.o) has no symbols
-cargo:warning=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/zion/src/open-ollama-cli/target/debug/build/ring-24a4f6eaeb9f5392/out/libring_core_0_17_14_.a(a0330e891e733f4e-p256.o) has no symbols
-cargo:warning=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/zion/src/open-ollama-cli/target/debug/build/ring-24a4f6eaeb9f5392/out/libring_core_0_17_14_.a(a0330e891e733f4e-gfp_p256.o) has no symbols
-cargo:warning=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/zion/src/open-ollama-cli/target/debug/build/ring-24a4f6eaeb9f5392/out/libring_core_0_17_14_.a(a0330e891e733f4e-p256.o) has no symbols
+cargo:warning=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/zion/src/Ollama_Cli/target/debug/build/ring-24a4f6eaeb9f5392/out/libring_core_0_17_14_.a(a0330e891e733f4e-gfp_p256.o) has no symbols
+cargo:warning=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/zion/src/Ollama_Cli/target/debug/build/ring-24a4f6eaeb9f5392/out/libring_core_0_17_14_.a(a0330e891e733f4e-p256.o) has no symbols
+cargo:warning=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/zion/src/Ollama_Cli/target/debug/build/ring-24a4f6eaeb9f5392/out/libring_core_0_17_14_.a(a0330e891e733f4e-gfp_p256.o) has no symbols
+cargo:warning=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/zion/src/Ollama_Cli/target/debug/build/ring-24a4f6eaeb9f5392/out/libring_core_0_17_14_.a(a0330e891e733f4e-p256.o) has no symbols
 cargo:rustc-link-lib=static=ring_core_0_17_14_
 OPT_LEVEL = Some(0)
-OUT_DIR = Some(/Users/zion/src/open-ollama-cli/target/debug/build/ring-24a4f6eaeb9f5392/out)
+OUT_DIR = Some(/Users/zion/src/Ollama_Cli/target/debug/build/ring-24a4f6eaeb9f5392/out)
 TARGET = Some(x86_64-apple-darwin)
 CARGO_ENCODED_RUSTFLAGS = Some(-Ctarget-cpu=native)
 HOST = Some(x86_64-apple-darwin)
@@ -73,7 +73,7 @@ CFLAGS_x86_64_apple_darwin = None
 cargo:rerun-if-env-changed=CFLAGS_x86_64-apple-darwin
 CFLAGS_x86_64-apple-darwin = None
 cargo:rustc-link-lib=static=ring_core_0_17_14__test
-cargo:rustc-link-search=native=/Users/zion/src/open-ollama-cli/target/debug/build/ring-24a4f6eaeb9f5392/out
+cargo:rustc-link-search=native=/Users/zion/src/Ollama_Cli/target/debug/build/ring-24a4f6eaeb9f5392/out
 cargo:rerun-if-changed=crypto/perlasm/x86_64-xlate.pl
 cargo:rerun-if-changed=crypto/perlasm/x86gas.pl
 cargo:rerun-if-changed=crypto/perlasm/x86nasm.pl

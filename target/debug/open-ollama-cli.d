@@ -1,1 +1,1 @@
-/Users/zion/src/open-ollama-cli/target/debug/open-ollama-cli: /Users/zion/src/open-ollama-cli/src/main.rs
+/Users/zion/src/Ollama_Cli/target/debug/open-ollama-cli: /Users/zion/src/Ollama_Cli/src/main.rs
