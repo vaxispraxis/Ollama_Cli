@@ -1,0 +1,1 @@
+{"rustc":7674676304537516793,"features":"","declared_features":"","target":0,"profile":0,"path":0,"deps":[[16112764869430360191,"build_script_build",false,7148475398532772517]],"local":[{"RerunIfChanged":{"output":"debug/build/zmij-4962fb029ee84e97/output","paths":["build.rs"]}}],"rustflags":["-C","target-cpu=native"],"config":0,"compile_kind":0}
